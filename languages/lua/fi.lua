@@ -3,8 +3,9 @@ local export = {}
 function export.languages()
     local ret = {}
 
-    -- https://fi.wiktionary.org/wiki/Module:languages
-    local m_languages = require("Module:languages")
+    local m_fi = require("")
+    -- https://fi.wiktionary.org/wiki/Moduuli:languages from https://en.wiktionary.org/wiki/Module:languages
+    local m_languages = require("Moduuli:languages")
     -- https://en.wiktionary.org/wiki/Module:languages/data/all
     local allData = mw.loadData("Module:languages/data/all")
 
